@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrival Time :.Dachser.:</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+    <script>
+        function limpar(){
+            //document.getElementById("arrivalTime").value="";
+            document.getElementById("arrivalTime").select();
+            
+        }
+    </script>
+<body>
+    <div class="jumbotron d-flex align-items-center">
+        <div class="container">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSd-ToMV5Gi_wPcx1usN376d10oajMMUikXidtjt-qZuqupEcQ/formResponse" method="post" id="application-form" target="hidden-form">
+            <div class="form-group" >
+                <label for="arrivalTime">Arrival Time - Dachser</label>
+                <input type="text" class="form-control" id="arrivalTime" name="entry.2039241929" aria-describedby="Codigo de Barras" placeholder="Ler código de barras"   autofocus="autofocus">
+                <small id="arrival time" class="form-text text-muted"></small>
+                
+                <button type="submit" class="btn btn-primary btn-lg" onclick="limpar()">Submeter</button>
+                
+            </div>
+            </form>
+            
+        </div>
+    </div>
+    <IFRAME style="display:none" name="hidden-form"></IFRAME>  
+</body>
+</html>
